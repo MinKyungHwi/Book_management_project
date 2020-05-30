@@ -1,0 +1,69 @@
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\proto.exe.config
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\proto.exe
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\proto.pdb
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\Bunifu_UI_v1.52.dll
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Main.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Panel.MainPane.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Properties.Resources.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.csproj.GenerateResource.cache
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.csproj.CopyComplete
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.exe
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.pdb
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Panel.PurchasePane.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Panel.SellPane.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Panel.CustomerPane.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.Panel.OrderPane.resources
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\MetroFramework.dll
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\bin\Debug\MetroFramework.Fonts.dll
+D:\컴퓨터공학과\4학년\캡디\초안\proto\proto\obj\Debug\proto.csprojAssemblyReference.cache
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\bin\Debug\proto.exe.config
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\bin\Debug\proto.exe
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\bin\Debug\proto.pdb
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\bin\Debug\MetroFramework.dll
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.csprojAssemblyReference.cache
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Main.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Panel.CustomerPane.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Panel.MainPane.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Panel.OrderPane.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Panel.PurchasePane.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Panel.SellPane.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.Properties.Resources.resources
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.csproj.GenerateResource.cache
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.csproj.CopyComplete
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.exe
+C:\Users\minka\Desktop\NONAME\초안 (2)\proto\proto\obj\Debug\proto.pdb
+C:\Users\minka\Desktop\NONAME\1\proto\proto\bin\Debug\proto.exe.config
+C:\Users\minka\Desktop\NONAME\1\proto\proto\bin\Debug\proto.exe
+C:\Users\minka\Desktop\NONAME\1\proto\proto\bin\Debug\proto.pdb
+C:\Users\minka\Desktop\NONAME\1\proto\proto\bin\Debug\MetroFramework.dll
+C:\Users\minka\Desktop\NONAME\1\proto\proto\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.csprojAssemblyReference.cache
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Main.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Panel.CustomerPane.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Panel.MainPane.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Panel.OrderPane.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Panel.PurchasePane.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Panel.SellPane.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.Properties.Resources.resources
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.csproj.GenerateResource.cache
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.csproj.CopyComplete
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.exe
+C:\Users\minka\Desktop\NONAME\1\proto\proto\obj\Debug\proto.pdb
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\bin\Debug\proto.exe.config
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\bin\Debug\proto.exe
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\bin\Debug\proto.pdb
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\bin\Debug\MetroFramework.dll
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.csprojAssemblyReference.cache
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Main.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Panel.CustomerPane.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Panel.MainPane.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Panel.OrderPane.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Panel.PurchasePane.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Panel.SellPane.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.Properties.Resources.resources
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.csproj.GenerateResource.cache
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.csproj.CopyComplete
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.exe
+C:\Users\minka\Desktop\졸작\528_23_55\proto\proto\obj\Debug\proto.pdb
