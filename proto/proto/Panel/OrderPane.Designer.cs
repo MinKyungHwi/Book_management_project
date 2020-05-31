@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderPane));
             this.RoundRect = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -61,7 +61,7 @@
             this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.Drop_store_name = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Btn_store_modify = new Bunifu.Framework.UI.BunifuFlatButton();
             this.text_store_addr = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -225,12 +225,12 @@
             this.bunifuDropdown5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuDropdown5.BorderRadius = 10;
             this.bunifuDropdown5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuDropdown5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown5.Items = new string[0];
             this.bunifuDropdown5.Location = new System.Drawing.Point(8, 42);
             this.bunifuDropdown5.Name = "bunifuDropdown5";
             this.bunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown5.onHoverColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
             this.bunifuDropdown5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuDropdown5.selectedIndex = -1;
             this.bunifuDropdown5.Size = new System.Drawing.Size(119, 29);
@@ -249,19 +249,19 @@
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("청소년서체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("청소년서체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -349,12 +349,12 @@
             this.bunifuDropdown4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuDropdown4.BorderRadius = 10;
             this.bunifuDropdown4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuDropdown4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown4.Items = new string[0];
             this.bunifuDropdown4.Location = new System.Drawing.Point(25, 168);
             this.bunifuDropdown4.Name = "bunifuDropdown4";
             this.bunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown4.onHoverColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
             this.bunifuDropdown4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuDropdown4.selectedIndex = -1;
             this.bunifuDropdown4.Size = new System.Drawing.Size(119, 32);
@@ -378,12 +378,12 @@
             this.bunifuDropdown3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuDropdown3.BorderRadius = 10;
             this.bunifuDropdown3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuDropdown3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown3.Items = new string[0];
             this.bunifuDropdown3.Location = new System.Drawing.Point(25, 115);
             this.bunifuDropdown3.Name = "bunifuDropdown3";
             this.bunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown3.onHoverColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
             this.bunifuDropdown3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuDropdown3.selectedIndex = -1;
             this.bunifuDropdown3.Size = new System.Drawing.Size(119, 30);
@@ -396,12 +396,12 @@
             this.bunifuDropdown2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuDropdown2.BorderRadius = 10;
             this.bunifuDropdown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown2.Items = new string[0];
             this.bunifuDropdown2.Location = new System.Drawing.Point(25, 62);
             this.bunifuDropdown2.Name = "bunifuDropdown2";
             this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown2.onHoverColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
             this.bunifuDropdown2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuDropdown2.selectedIndex = -1;
             this.bunifuDropdown2.Size = new System.Drawing.Size(119, 28);
@@ -557,7 +557,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.bunifuDropdown1);
+            this.groupBox1.Controls.Add(this.Drop_store_name);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel4);
             this.groupBox1.Controls.Add(this.Btn_store_modify);
             this.groupBox1.Controls.Add(this.text_store_addr);
@@ -575,24 +575,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "매입처 등록/수정";
             // 
-            // bunifuDropdown1
+            // Drop_store_name
             // 
-            this.bunifuDropdown1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bunifuDropdown1.BorderRadius = 10;
-            this.bunifuDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuDropdown1.Items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(11, 151);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuDropdown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(119, 26);
-            this.bunifuDropdown1.TabIndex = 23;
-            this.bunifuDropdown1.UseWaitCursor = true;
+            this.Drop_store_name.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.Drop_store_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
+            this.Drop_store_name.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Drop_store_name.BorderRadius = 10;
+            this.Drop_store_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Drop_store_name.ForeColor = System.Drawing.Color.White;
+            this.Drop_store_name.Items = new string[0];
+            this.Drop_store_name.Location = new System.Drawing.Point(11, 151);
+            this.Drop_store_name.Name = "Drop_store_name";
+            this.Drop_store_name.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
+            this.Drop_store_name.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(67)))));
+            this.Drop_store_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Drop_store_name.selectedIndex = -1;
+            this.Drop_store_name.Size = new System.Drawing.Size(119, 26);
+            this.Drop_store_name.TabIndex = 23;
+            this.Drop_store_name.UseWaitCursor = true;
+            this.Drop_store_name.onItemSelected += new System.EventHandler(this.Drop_store_name_onItemSelected);
             // 
             // bunifuCustomLabel4
             // 
@@ -785,7 +786,6 @@
         private Bunifu.Framework.UI.BunifuElipse RoundRect;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuFlatButton Btn_store_modify;
         private Bunifu.Framework.UI.BunifuMetroTextbox text_store_addr;
@@ -821,5 +821,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
+        public Bunifu.Framework.UI.BunifuDropdown Drop_store_name;
     }
 }
