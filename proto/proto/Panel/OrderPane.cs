@@ -19,6 +19,7 @@ namespace proto.Panel
     public partial class OrderPane : UserControl
     {
         OleDbConnection con =new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=order.accdb; Persist Security Info=False");
+        public string targetPath = Application.StartupPath + @"Data Source=order.accdb;";
 
         //
         //
@@ -40,30 +41,18 @@ namespace proto.Panel
             {
                 store_name.Items.Add(read.GetString(0));
                 order_store_name.Items.Add(read.GetString(0));
-                mana_book_store_name.Items.Add(read.GetString(0));
 
             }
 
-            // 도서관리 도서명 콤보박스
             OleDbCommand cmd2 = con.CreateCommand();
             cmd2.CommandType = CommandType.Text;
             cmd2.CommandText = "SELECT 도서명 from T_order";
+            cmd2.Connection = con;
             OleDbDataReader read2 = cmd2.ExecuteReader();
             while (read2.Read())
             {
-                mana_book_name.Items.Add(read2.GetString(0));
-                combo_order_book_category.Items.Add(read2.GetString(0));
-            }
+                comboBox1.Items.Add(read2.GetString(0));
 
-
-            // 주문 도서 종류 콤보박스
-            OleDbCommand cmd3 = con.CreateCommand();
-            cmd3.CommandType = CommandType.Text;
-            cmd3.CommandText = "SELECT 장르 from T_order group by 장르";
-            OleDbDataReader read3 = cmd3.ExecuteReader();
-            while (read3.Read())
-            {
-                combo_order_book_category.Items.Add(read3.GetString(0));
             }
 
             con.Close();
@@ -153,8 +142,8 @@ namespace proto.Panel
                 DataTable dt = new DataTable();
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                 da.Fill(dt);
-                bunifuCustomDataGrid1.AllowUserToResizeColumns = true;
-                bunifuCustomDataGrid1.DataSource = dt;
+                dataGridView1.AllowUserToResizeColumns = true;
+                dataGridView1.DataSource = dt;
                 con.Close();
             }
             catch
@@ -177,8 +166,8 @@ namespace proto.Panel
                 DataTable dt = new DataTable();
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                 da.Fill(dt);
-                bunifuCustomDataGrid1.AllowUserToResizeColumns = true;
-                bunifuCustomDataGrid1.DataSource = dt;
+                dataGridView1.AllowUserToResizeColumns = true;
+                dataGridView1.DataSource = dt;
                 con.Close();
             }
             catch
@@ -191,20 +180,19 @@ namespace proto.Panel
         // 날짜별 주문 조회 버튼
         private void Btn_date_order_check_Click(object sender, EventArgs e)
         {
-
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * FROM T_order WHERE 구매일 BETWEEN '" + dateTimePicker1.Text + "' AND '" + dateTimePicker2.Text + "' ";
+            cmd.CommandText = "Select * FROM T_order WHERE 구매일 BETWEEN #" + dateTimePicker1.Text + "# AND #" + dateTimePicker2.Text + "# ";
             cmd.ExecuteNonQuery();
-             
+
             //"Select * FROM T_order  '" + dateTimePicker1.Text + "' ";
 
             DataTable dt = new DataTable();
             OleDbDataAdapter da = new OleDbDataAdapter(cmd);
             da.Fill(dt);
-            bunifuCustomDataGrid1.AllowUserToResizeColumns = true;
-            bunifuCustomDataGrid1.DataSource = dt;
+            dataGridView2.AllowUserToResizeColumns = true;
+            dataGridView2.DataSource = dt;
             con.Close();
         }
 
@@ -218,7 +206,9 @@ namespace proto.Panel
                 con.Open();
                 OleDbCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "DELETE from T_order where 도서명= '" + order_book_name.Text + "' ";
+                cmd.CommandType = CommandType.Text;
+                
+                cmd.CommandText = "DELETE from T_order where 도서명= '" + comboBox1.Text + "' ";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("삭제 완료");
@@ -230,32 +220,6 @@ namespace proto.Panel
         }
 
 
-
-        //주문 주문 버튼
-        private void Btn_book_order_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DateTime setDay;
-                dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-                dateTimePicker1.Format = DateTimePickerFormat.Custom;
-                setDay = dateTimePicker1.Value;
-
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO T_order (도서명, 사명, 장르, 갯수, 구매일)  " +
-                "VALUES ('" + order_book_name.Text + "', '" + order_store_name.Text + "', '" + order_book_category.Text + "' , " + order_book_amount.Text + ", '" + dateTimePicker1.Text + "')";
-                cmd.ExecuteNonQuery();
-                cmd.Connection = con;
-                con.Close();
-                MessageBox.Show(" 주문 완료 ");
-            }
-            catch
-            {
-                MessageBox.Show(" 주문 실패 ");
-            }
-        }
 
 
         //동종 도서 수량 변경 버튼
@@ -273,74 +237,85 @@ namespace proto.Panel
 
 
 
-
-
-
         //
         //
-        //도서관리 Group 시작
         //
         //
-        //도서 재고 조회 버튼
-        private void Btn_bookmana_check_Click(object sender, EventArgs e)
+        //
+        //Gridview 클릭 시 
+        class DataConn
         {
-            try
+            public DataSet GetDataset(string sql, string DB_path)
             {
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT * FROM book where 판매 = 'No' ";
-                cmd.ExecuteNonQuery();
+                string connStr = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=order.accdb ;Persist Security Info=False";
 
-                DataTable dt = new DataTable();
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                da.Fill(dt);
-                bunifuCustomDataGrid1.AllowUserToResizeColumns = true;
-                bunifuCustomDataGrid1.DataSource = dt;
-                con.Close();
+
+                OleDbConnection conn = new System.Data.OleDb.OleDbConnection(connStr);
+                DataSet ds = new DataSet();
+                OleDbDataAdapter adp = new OleDbDataAdapter(sql, conn);
+                
+                return ds;
+
             }
-            catch
-            {
-                MessageBox.Show("재고 조회 실패");
-            }
+        }
+        
+
+        private void dataGridView1_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            /*
             
-        }
+            string DB_path = targetPath;
 
-        //도서 관리 등록 버튼
-        private void Btn_bookmana_add_Click(object sender, EventArgs e)
-        {
+            DataSet ds = new DataSet();
+            DataConn conn1 = new DataConn();
+            string sql = @"SELECT T_order.도서명, book.출판사, T_order.갯수, T_order.매입가격, T_order 구매일
+                          FROM T_order JOIN Orders ON T_order.도서명 = book.도서명
+                          WHERE (((T_order.order_ID)='" + ID_1 + "'))";
+            ds = conn1.GetDataset(sql, DB_path);
+            dataGridView2.DataSource = ds.Tables[0];
+            */
+
+         
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO book (도서명, 사명, 갯수, 보유, 판매) " +
-                "VALUES ('" + mana_book_name.Text + "', '" + mana_book_store_name.Text + "', " + mana_book_amount.Text + " , '"+ mana_book_have.Text + "' , '"+mana_book_sell.Text+"') ";
+            string ID_1 = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            cmd.CommandText = "Select  T_order.도서명, book.출판사, T_order.갯수, T_order.매입가격, T_order.구매일 " +
+                "FROM T_order,book " +
+                "WHERE (T_order.도서명 = book.도서명)";
             cmd.ExecuteNonQuery();
+            cmd.Connection = con;
             con.Close();
-            MessageBox.Show(" 등록 완료 ");
-        }
+
+            DataTable dt = new DataTable();
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView2.AllowUserToResizeColumns = true;
+            dataGridView2.DataSource = dt;
+            con.Close();
+         
+
+            dataGridView1.CurrentRow.Selected = true;
 
 
-        //도서 관리 미입고 버튼
-        private void Btn_bookmana_not_IN_Click(object sender, EventArgs e)
-        {
+
+
+            /*
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM book where 보유 = 'No' ";
+            cmd.CommandText = "SELECT  from T_order";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();
             OleDbDataAdapter da = new OleDbDataAdapter(cmd);
             da.Fill(dt);
-            bunifuCustomDataGrid1.AllowUserToResizeColumns = true;
-            bunifuCustomDataGrid1.DataSource = dt;
+            dataGridView1.AllowUserToResizeColumns = true;
+            dataGridView1.DataSource = dt;
             con.Close();
+            */
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-        }
+
     }
 }
